@@ -31,7 +31,7 @@
         </activity>        
         
         <activity android:name=".WebViewActivity1"
-                android:label="SBS Web View 1">
+                android:label="Web View/Set SBS Callback for JS">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SBS_API" />
@@ -39,13 +39,21 @@
         </activity>                
 
         <activity android:name=".WebViewActivity2"
-                android:label="SBS Web View 2">
+                android:label="Web View/Use SBS Interface in JS">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SBS_API" />
             </intent-filter>
         </activity>        
         
+        <activity android:name=".WebViewActivity3"
+                android:label="Web View/Disable SBS in JS">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SBS_API" />
+            </intent-filter>
+        </activity>        
+		
     </application>
 
 </manifest>

@@ -32,7 +32,7 @@ public class MainActivity extends ListActivity {
             path = "";
         }
 
-        setListAdapter(new SimpleAdapter(this, getData(""),
+        setListAdapter(new SimpleAdapter(this, getData(path),
                 android.R.layout.simple_list_item_1, new String[] { "title" },
                 new int[] { android.R.id.text1 }));
         getListView().setTextFilterEnabled(true);
@@ -91,7 +91,7 @@ public class MainActivity extends ListActivity {
             }
         }
 
-        Collections.sort(myData, sDisplayNameComparator);
+//        Collections.sort(myData, sDisplayNameComparator);
         
         return myData;
     }
